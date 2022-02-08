@@ -1,0 +1,32 @@
+->Task-ul Amestecare
+    -Inversare:
+        *M-am folosit de o lista auxiliara prin care am inversat nodurile din lista.
+    -Intercalare:
+        *In principiu ideea mea se rezuma la parcurgerea listei cu ajutorul unor liste auxiliare de la inceput si de la mijloc.
+        *Introducem alternativ din prima parte(cea pana in mijlocul listei) si din cea de-a doua(dupa mijlocul listei) elemente in noua lista creata.
+    -Mongean:
+        *Am parcurs lista initiala cu ajutorul uneia secundare si m-am folosit in un contor.
+        *Am observat faptul ca atunci cand contorul este numar par trebuie sa introduc la inceputul noii liste iar cand acesta este impar, la sfarsitul noii liste.
+    -Npiles:
+        *In principiu am parcurs vectorul de indici cu ajutorul unui for si in interiorul acestuia am parcurs si lista.
+        *M-am folosit de un contor pentru a afla atunci cand incepe un nou subpachet si verificam daca este subpachetul pe care trebuie sa il introduc in noua lista.
+        *Aceasta verificare am facut-o dupa ideea:contorul trebuie sa fie multiplu de dimensiunea subpachetelor si daca impartirea acestuia la aceasta dimensiune este egala cu indicele subpachetului - 1.
+->Task-ul Razboi
+    -M-am folosit de un while care se termina atunci cand un jucator castiga sau dupa jucarea a 100 de maini.
+    -Comparam la fiecare pas valorile cartilor din mainile jucatorilor.
+    -In cazul in care cartile erau diferite efectuam operatiile de mutare corespunzatoare.
+    -In cazul in care cartile erau egale intram in cazul de razboi, unde efectuam urmatoarele operatii:
+        *Aflam numarul de carti pe care trebuia sa le intoarca jucatorii.
+        *Dupa aceea salvam cartile pe care trebuia sa le intoarca fiecare jucator in doua liste auxiliare.
+        *Stergeam primele n carti din fiecare pachet(cele pe care jucatorii trebuiau sa le schimbe intre ei).
+        *In functie de valorile cartilor pe care trebuia sa le comparam ulterior aflam unde trebuia sa introducem cartile salvate in listele auxiliare.
+
+->Task-ul Rolling Stone
+    -Am observat ca in principiu task-ul se bazeaza pe cate carti din fiecare culoare are fiecare jucator.
+    -In acest caz am realizat cate un vector de frecventa pentru fiecare jucator in care retineam: pe pozitia 0 cate carti de culoare 's' are,
+    pe pozitia 1 cate carti de culoare 'h', pe pozitia 2 cate carti de culoare 'd' are, pe pozitia 3 cate carti de culoare 'c'.
+    -Vectorii de frecventa i-am introdus intr-o matrice de 5 linii si 4 coloane in care linia cu indicele 0 reprezinta vectorul de frecventa pentru primul jucator.
+    -Ultima linie din matrice reprezinta vectorul de frecventa pentru cartile de pe masa.
+    -Am observat ca sunt 3 cazuri ce trebuie tratate:cand jucatorul curent are carti de o culoarea curenta in pachet, cand acesta nu are carti de culoarea curenta in pachet iar masa are carti pe ea,
+    cazul in care jucatorul nu are carti de culoarea curenta si masa este goala de asemenea.
+    -Am realizat operatiile aferente pentru fiecare caz in parte.
